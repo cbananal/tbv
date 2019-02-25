@@ -1,0 +1,30 @@
+@import "../../less/mixins";
+.widget-function('import_google_font');
+
+@color: #fff;
+@font: default;
+@align: left;
+@font_size: 1.5em;
+@tablet_font_size: 1em;
+@mobile_font_size: 1.3em;
+@line_height: 1em;
+
+.typed-text-container {
+	color: @color;
+	font-family: @font;
+	text-align: @align;
+	font-size: @font_size;
+	@line_height: 1em;
+}
+
+@media screen and (max-width: 768px) {
+	.typed-text-container {
+		font-size: @tablet_font_size;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.typed-text-container {
+		font-size: @mobile_font_size;
+	}
+}
